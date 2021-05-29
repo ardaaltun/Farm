@@ -12,6 +12,7 @@ public class myScript : MonoBehaviour
     public GameObject ray;
     public AudioSource shootSFX;
     bool shot = false;
+
     //public LineRenderer line;
     void Start()
     {
@@ -47,9 +48,16 @@ public class myScript : MonoBehaviour
         //shot = false;
         RaycastHit hit;
         Physics.Raycast(ray.transform.position, ray.transform.forward, out hit, 25f);
-        if (hit.transform != null)
+        if (hit.transform != null && hit.transform.tag != "terrain")
         {
-            Debug.Log("You Hit: " + hit.transform.gameObject.name);
+            Destroy(hit.transform.gameObject);
+            
+        }
+        if(hit.transform != null && hit.transform.tag == "Enemy")
+        {
+            //print("shot");
+            //print(GameObject.Find("Terrain").GetComponent<spawner>().counter);
+            GameObject.Find("Terrain").GetComponent<spawner>().counter--;
         }
         Debug.DrawRay(ray.transform.position, ray.transform.forward * 25f, Color.red, 5);
         //line = (ray.transform.position,)
