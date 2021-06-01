@@ -1,70 +1,67 @@
 fileFormatVersion: 2
-guid: f593d44d4fb76b0478b7fb69ab18f7b8
+guid: fc0d05d78ed12b24eb0d67e691f0eff2
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: Armature
-    100002: Armature.001
-    100004: Bone
-    100006: Bone.001
-    100008: Bone.002
-    100010: Bone.003
-    100012: Bone.003_end
-    100014: Bone.005
-    100016: Bone.006
-    100018: Bone.007
-    100020: Bone.007_end
-    100022: Bone.009
-    100024: Bone.010
-    100026: Bone.011
-    100028: Bone.011_end
-    100030: Bone.012
-    100032: Bone.013
-    100034: Bone.014
-    100036: Bone.014_end
-    100038: Bone.015
-    100040: Bone.016
-    100042: Bone.017
-    100044: Bone.017_end
-    100046: Bone_end
-    100048: //RootNode
-    100050: Sphere
+    100002: Bone.001
+    100004: Bone.002
+    100006: Bone.003
+    100008: Bone.003_end
+    100010: Bone.005
+    100012: Bone.006
+    100014: Bone.007
+    100016: Bone.007_end
+    100018: Bone.009
+    100020: Bone.010
+    100022: Bone.011
+    100024: Bone.011_end
+    100026: Bone.012
+    100028: Bone.013
+    100030: Bone.014
+    100032: Bone.014_end
+    100034: Bone.015
+    100036: Bone.016
+    100038: Bone.017
+    100040: Bone.017_end
+    100042: //RootNode
+    100044: Sphere
     400000: Armature
-    400002: Armature.001
-    400004: Bone
-    400006: Bone.001
-    400008: Bone.002
-    400010: Bone.003
-    400012: Bone.003_end
-    400014: Bone.005
-    400016: Bone.006
-    400018: Bone.007
-    400020: Bone.007_end
-    400022: Bone.009
-    400024: Bone.010
-    400026: Bone.011
-    400028: Bone.011_end
-    400030: Bone.012
-    400032: Bone.013
-    400034: Bone.014
-    400036: Bone.014_end
-    400038: Bone.015
-    400040: Bone.016
-    400042: Bone.017
-    400044: Bone.017_end
-    400046: Bone_end
-    400048: //RootNode
-    400050: Sphere
+    400002: Bone.001
+    400004: Bone.002
+    400006: Bone.003
+    400008: Bone.003_end
+    400010: Bone.005
+    400012: Bone.006
+    400014: Bone.007
+    400016: Bone.007_end
+    400018: Bone.009
+    400020: Bone.010
+    400022: Bone.011
+    400024: Bone.011_end
+    400026: Bone.012
+    400028: Bone.013
+    400030: Bone.014
+    400032: Bone.014_end
+    400034: Bone.015
+    400036: Bone.016
+    400038: Bone.017
+    400040: Bone.017_end
+    400042: //RootNode
+    400044: Sphere
     2100000: eye
     2100002: head
     2100004: body
     2100006: feet
     4300000: Sphere
     7400000: Idle
-    7400002: Attack
-    7400004: Death
-    7400006: Armature|Attack
-    7400008: Armature.001|Attack.001
+    7400002: Chase
+    7400004: Attack
+    7400006: Death
+    7400008: Armature|Attack
+    7400010: Armature|Chase
+    7400012: Armature|Death
+    7400014: Armature|Idle
     9500000: //RootNode
     13700000: Sphere
   externalObjects: {}
@@ -94,7 +91,119 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Idle
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Chase
+      takeName: Chase
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Attack
+      takeName: Attack
+      firstFrame: 0
+      lastFrame: 14
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Death
+      takeName: Death
+      firstFrame: 0
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
